@@ -5,7 +5,7 @@ The first sub-component – the topic modelling-based user behaviour analysis to
 Running tutorial for LDA-Visualization:
 
 1) Calculate the LDA ensembles: 
-	python lda_calculate.py
+	python lda_generate.py
 	
 2) Put the output files of step 2 (lda_doc_topic_final.csv and lda_topic_word_final.csv) to lda_va/data, and run a python server in that folder:
     python -m http.server
