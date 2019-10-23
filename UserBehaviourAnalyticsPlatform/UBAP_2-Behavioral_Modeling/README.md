@@ -12,5 +12,5 @@ The following is the short description of each of the scripts:
 
 4. application.py - applies saved models for producing scores of the sessions, both normal and attacks and builds the ROC curve
 
-Data folder includes json files with training data and attacks data, also the file describing the clusters separation produced by UBAP-1.
+Data folder includes json files with training data and attacks data, also the file describing the clusters separation produced by UBAP-1. The dataset included here is ADFA-LD (https://www.unsw.adfa.edu.au/unsw-canberra-cyber/cybersecurity/ADFA-IDS-Datasets/)
 Models folder will contain all the models created after running model_clusters.py script.
