@@ -1,0 +1,441 @@
+.ui-resizable-ghost { border: 1px dotted gray; }
+.links line {
+  stroke: #99c;
+  stroke-opacity: 0.6;
+}
+
+.peopleLinks line {
+  stroke: #f90;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.links {
+  stroke: #000;
+  stroke-opacity: 0.2;
+}
+
+.polygons {
+  fill: none;
+  stroke: #ccc;
+}
+
+/*.polygons :first-child {
+  fill: #f00;
+}
+*/
+.sites {
+  fill: #000;
+  stroke: #fff;
+}
+
+.sites :first-child {
+  fill: #fff;
+}
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node--leaf {
+  fill: white;
+}
+
+.label {
+  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+
+.horizon {
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.horizon + .horizon {
+    border-top: none;
+}
+
+.horizon canvas {
+    display: block;
+    image-rendering: pixelated;
+}
+
+.horizon .title,
+.horizon .value {
+  bottom: 0;
+  line-height: 8px;
+  margin: 0 2px;
+  position: absolute;
+  font-family: sans-serif;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  white-space: nowrap;
+  font-size:small;
+}
+
+.horizon .title {
+  left: 0;
+}
+
+.horizon .value {
+  right: 0;
+}
+/*
+#newBottomView{
+  position:absolute;
+  left:0%;
+  width: 100%;
+  top:100%;
+  height: 100%;  
+}*/
+#newBottomView{
+  position:absolute;
+  left:0%;
+  width: 40%;
+  top:50%;
+  height: 50%;
+
+}
+/*
+#topView{
+  position:absolute;
+  left:40%;
+  width: 60%;
+  top:15%;
+  height: 85%;
+}*/
+#topView{
+  position:absolute;
+  left:40%;
+  width: 60%;
+  top:15%;
+  height: 85%;
+}
+
+/*
+#topTopView{
+  position:absolute;
+  left:0%;
+  width: 100%;
+  top:0%;
+  height: 5%;
+  overflow-y:scroll;
+  overflow-x:hidden;
+
+}
+
+#topSecondTopView{
+  position:absolute;
+  left:0%;
+  width: 100%;
+  top:5%;
+  height: 10%;
+  overflow-y:scroll;
+  overflow-x:hidden;
+
+}*/
+
+#topTopView{
+  position:absolute;
+  left:40%;
+  width: 60%;
+  top:0%;
+  height: 10%;
+  overflow-y:scroll;
+  overflow-x:hidden;
+
+}
+
+#topSecondTopView{
+  position:absolute;
+  left:40%;
+  width: 60%;
+  top:10%;
+  height: 5%;
+  overflow-y:scroll;
+  overflow-x:hidden;
+
+}
+
+
+/*#rightView{
+  position:absolute;
+  left:0%;
+  width: 40%;
+  top:15%;
+  height: 55%;
+}*/
+#rightView{
+  position:absolute;
+  left:0%;
+  width: 40%;
+  top:0%;
+  height: 50%;
+}
+#bottomTopView{
+  position:absolute;
+  left:0%;
+  width: 100%;
+  top:100%;
+  height: 30%;
+}
+
+#bottomBottomLeftView{
+  position:absolute;
+  left:0%;
+  width: 40%;
+  top:130%;
+  height: 70%;
+}
+
+#bottomView{
+  position:absolute;
+  left:40%;
+  width: 60%;
+  top:130%;
+  height: 70%;
+}
+
+/*#bottomLeftView{
+  position:absolute;
+  left:0%;
+  width: 40%;
+  top:70%;
+  height: 30%;
+}
+*/
+#bottomLeftView{
+  position:absolute;
+  left:0%;
+  width: 40%;
+  top:50%;
+  height: 50%;
+}
+
+/*#rightTopBar{
+  position:absolute;
+  right:0%;
+  top:15%;
+  height: 10%;
+}*/
+#rightTopBar{
+  position:absolute;
+  right:0%;
+  top:15%;
+  height: 5%;
+}
+/*
+#rightBottomBar1{
+  position:absolute;
+  left:0%;
+  width: 30%;
+  top:15%;
+  height: 5%;  
+}*/
+
+#rightBottomBar1{
+  position:absolute;
+  left:0%;
+  width: 40%;
+  top:47%;
+  height: 5%;  
+}
+#rightBottomBar{
+  position:absolute;
+  left:0%;
+  width: 50%;
+  top:70%;
+  height: 5%;  
+}
+
+
+#glyphView{
+  position:absolute;
+  left:0%;
+  width: 20%;
+  top: 0%;
+  height: 95%;
+}
+
+#topBottomView{
+  position:absolute;
+  left:25%;
+  width: 45%;
+  top:90%;
+  height: 5%;
+}
+
+
+#rightTopView{
+  position:absolute;
+  left:75%;
+  right:0%;
+  top:0%;
+  bottom:50%;
+}
+
+#rightBottomView{
+  position:absolute;
+  left:75%;
+  right:0%;
+  top:62%;
+  bottom:8%;
+}
+
+#ControlPanel{
+  position:absolute;
+  left:20%;
+  width:45%;
+  top:0%;
+  bottom:95%;
+}
+
+
+.venntooltip {
+  position: absolute;
+  text-align: center;
+  width: 128px;
+  height: 20px;
+  background: #fff;
+  color: #000;
+  padding: 2px;
+  border: 0px;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+    path{
+      fill:none;
+      stroke:black;
+    }
+
+
+    .field {
+        stroke: none;
+        fill-opacity: 1.0;
+    }
+
+    .slope {
+        stroke-width: 0.5;
+    }
+
+    .river {
+        stroke-width: 1;
+    }
+
+    .coast {
+        stroke-width: 2;
+    }
+    .border {
+        stroke-width: 1;
+        stroke-dasharray: 4,4;
+        stroke-linecap: butt;
+    }
+/*    .border {
+        stroke-width: 3;
+        stroke-dasharray: 4,4;
+        stroke-linecap: butt;
+    }*/
+
+    text {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        color: black;
+        stro/*ke: white;
+        stroke-wid*/th: 3;
+        /*stroke-linejoin: round;*/
+        /*paint-order: stroke;*/
+    }
+
+    text.region {
+        stroke-width:10;
+        font-variant: small-caps;
+    }
+
+
+table.dataTable thead th{
+  padding:2px;
+}
+
+input {
+  width:60px;
+}
+
+
+table.dataTable td{
+        font-size: 12px;
+        max-width: 0;
+        overflow: hidden;
+        /*text-overflow: ellipsis;*/
+        white-space: nowrap;
+    }
+
+table.dataTable  tr:hover td {
+        overflow: auto;
+        text-overflow: clip;
+        white-space: normal;
+    }
+
+table.dataTable  tr:active td {
+        overflow: auto;
+        text-overflow: clip;
+        white-space: normal;        
+    }
+table.dataTable tr.selected {
+  background: #FFCF8B;
+}
+table.dataTable tr.selected td {
+  color: #555;
+}
+
+/*
+        circle {
+            fill-opacity: 0.5;
+        }
+*/
+        .lasso path {
+            stroke: rgb(80,80,80);
+            stroke-width:2px;
+        }
+
+        .lasso .drawn {
+            fill-opacity:.05 ;
+        }
+
+        .lasso .loop_close {
+            fill:none;
+            stroke-dasharray: 4,4;
+        }
+
+        .lasso .origin {
+            fill:#3399FF;
+            fill-opacity:.5;
+        }
+
+        .not_possible {
+            fill: rgb(200,200,200);
+        }
+
+        .possible {
+            fill: #EC888C;
+        }
+
+        .selected {
+            fill: steelblue;
+        }

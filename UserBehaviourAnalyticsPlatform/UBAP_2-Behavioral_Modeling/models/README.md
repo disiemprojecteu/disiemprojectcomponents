@@ -1,0 +1,1 @@
+In this folder all the models created during training would be saved
